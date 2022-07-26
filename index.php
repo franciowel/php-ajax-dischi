@@ -12,12 +12,26 @@
 </head>
 
 <body>
-
+    <?php include __DIR__ . '/database.php'; ?>
+    <!-- HEADER -->
     <header>
             <div>
                 <img src="https://www.geekslab.it/wp-content/uploads/2019/03/logo-spotify.png" class="logo" alt="logo">
             </div>
     </header>
+    <!-- CONTENT CON DISCHI -->
+    <div class="container_disk">
+        <?php foreach($database as $disk) { ?>
+            <div class="disk p-3 text-center">
+
+                <img src=<?php echo $disk['poster']; ?> alt=<?php echo $disk['title']; ?> />
+                <h3><?php echo $disk['title']; ?></h3>
+                <p><?php echo $disk['author']; ?></p>
+                <p class="year"><?php echo $disk['year']; ?></p>
+
+            </div>
+        <?php } ?>
+    </div>
     
 </body>
 
