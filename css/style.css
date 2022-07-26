@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1f2d3a;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #2f3a45;
+    height: 90px;
+}
+.logo {
+    width: 100px;
+    padding: 1rem;
+}
